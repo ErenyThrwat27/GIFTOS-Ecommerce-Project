@@ -1,4 +1,18 @@
-<x-guest-layout>
+<!DOCTYPE html>
+<html>
+
+<head>
+ @include('home.css')
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    @include('home.header')
+    <!-- end header section -->
+
+
+    <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
@@ -16,6 +30,19 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
+        <div>
+            <x-input-label for="phone" :value="__('Phone')" />
+            <x-text-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" required autocomplete="phone" />
+            <x-input-error :messages="$errors->get('phone')" class="mt-2" />
+        </div>
+
+        <div>
+            <x-input-label for="email" :value="__('Address')" />
+            <x-text-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address')" required autocomplete="address" />
+            <x-input-error :messages="$errors->get('address')" class="mt-2" />
+        </div>
+
+        
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
@@ -50,3 +77,12 @@
         </div>
     </form>
 </x-guest-layout>
+
+
+  <!-- info section -->
+
+  @include('home.footer')
+
+</body>
+
+</html>

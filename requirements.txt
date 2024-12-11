@@ -1,0 +1,28 @@
+E-commerce project in laravel cantains :
+Make multiple authentication in laravel using breeze .
+ Integrate HTML tempelate in laravel project .
+Integrate admin  tempelate in laravel project.
+ Adding & delete category from admin dashboard .
+Show toaster message.
+ Display category data from table.
+Show sweet alert delete.
+Edit data.
+Upload &display &delete product data to database table.
+Pagination .
+show short description .
+Delete image from public  folder.
+Update product data in admin panal.
+ Make search box.
+Display product data in home page .
+Add product cart.
+ Show total num of product added to cart.
+show product cart data using FK.
+Display total price.
+Move cart data to order table.
+Display order data in admin panal.
+Print &download  PDF.
+Display total count of data in admin panel .
+Email verification .
+Make stripe payment .
+Customize login & register page design. 
+Show &why &contact &testimonial pages ./Generate unique slug automatically

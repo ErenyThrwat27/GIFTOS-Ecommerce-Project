@@ -13,6 +13,10 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
+    'stripe' => [
+    'public_key' => env('STRIPE_KEY'),
+    'secret_key' => env('STRIPE_SECRET'),
+],
 
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
